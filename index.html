@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="data/data.json"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Social Network - Friends</title>
+</head>
+<body>
+    <div class="header">
+        <div class="title-header form-group">
+            <label for="dp_persons" class="person">Osoba:</label>
+            <select name="dp_persons" id="dp_persons" class="dp_persons form-control" onchange="selectedPerson()">
+                <option>Izaberi</option>
+            </select>
+        </div>
+    </div>
+    <div class="content">
+        <div id="direct_friends" class="data_persons">
+            <!-- Dynamic addition via javascript -->
+        </div>
+        <div id="friends_of_friend" class="data_persons">
+            <h3 class="person"></h3>
+        </div>
+    </div>
+</body>
+</html>
